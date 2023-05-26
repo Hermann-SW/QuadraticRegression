@@ -10,3 +10,9 @@ Usage:
 python main.py file.csv
 ```
 
+
+Self contained example (with pd.DataFrame()):  
+```
+python sympy_gaussian_integer_gcd_benchmark.py
+```
+![sympy_gaussian_integer_gcd_benchmark.png](sympy_gaussian_integer_gcd_benchmark.png)

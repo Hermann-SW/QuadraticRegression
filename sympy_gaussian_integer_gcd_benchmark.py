@@ -1,14 +1,14 @@
+# modified, from: https://github.com/Bumpkin-Pi/QuadraticRegression
 import math
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 from math import pow as toPower
 import numpy as np
-print(sys.argv)
-if (len(sys.argv) < 2):
-	print("error, no csv file given. Usage: python main.py example.csv")
-	exit
-data = pd.read_csv(sys.argv[1])
+data = pd.DataFrame({
+    "x": [10000, 36481, 100355, 200700, 388342],
+    "y": [0.7, 12.9, 139.5, 648.1, 2524.1]
+})
 
 Σx = 0
 Σy = 0
@@ -41,13 +41,19 @@ solve = np.linalg.solve(a, b)
 
 print((f'y = {solve[0]}x² + {solve[1]}x + {solve[2]}').replace("+ -", "- "))
 
-x = np.linspace(-10, 100, 1000)
+x = np.linspace(0, 400000, 1000)
 
 y = (x**2)*solve[0] + solve[1]*x + solve[2]
 plt.plot(x, y)
 
-plt.ylabel('y')
-plt.xlabel('x')
+font = {'family': 'monospace',
+        'color':  'darkred',
+        'weight': 'normal',
+        'size': 12,
+        }
 
+plt.title('Python sympy gaussian integer gcd() benchmark\n( with precomputed sqrtm1 = sqrt(-1) (mod p) )', fontsize=12)
+plt.ylabel('gcd(p, sqrtm1 + I) runtime [s] (on i7-11850H)', fontsize=12, fontdict=font)
+plt.xlabel('prime p [decimal digits]', fontsize=12)
 
 plt.show()
