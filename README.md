@@ -11,7 +11,7 @@ python main.py file.csv
 ```
 
 
-Self contained example (with pd.DataFrame()):  
+Self contained example (with pandas ```pd.DataFrame({"x": [...], "y": [...]})``` instead of ```pd.read_csv(sys.argv[1])```):  
 ```
 python sympy_gaussian_integer_gcd_benchmark.py
 ```
