@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from math import pow as toPower
 import numpy as np
 data = pd.DataFrame({
-    "x": [10000, 36481, 100355, 200700, 388342],
-    "y": [0.7, 12.9, 139.5, 648.1, 2524.1]
+    "x": [10000, 36481, 100355, 200700, 272770, 330855, 388342],
+    "y": [0.7, 12.9, 139.5, 648.1, 1262.5, 1878.6, 2524.1]
 })
 
 Σx = 0
@@ -52,7 +52,7 @@ font = {'family': 'monospace',
         'size': 12,
         }
 
-plt.title('Python sympy gaussian integer gcd() benchmark\n( with precomputed sqrtm1 = sqrt(-1) (mod p) )', fontsize=12)
+plt.title('Python sympy gaussian integer gcd() benchmark; with\nprecomputed sqrtm1 = sqrt(-1) (mod p) — no speedup using gmpy2', fontsize=12)
 plt.ylabel('gcd(p, sqrtm1 + I) runtime [s] (on i7-11850H)', fontsize=12, fontdict=font)
 plt.xlabel('prime p [decimal digits]', fontsize=12)
 
