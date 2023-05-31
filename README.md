@@ -16,3 +16,9 @@ Self contained example (with pandas ```pd.DataFrame({"x": [...], "y": [...]})```
 python sympy_gaussian_integer_gcd_benchmark.py
 ```
 ![sympy_gaussian_integer_gcd_benchmark.png](sympy_gaussian_integer_gcd_benchmark.png)
+
+Self contained example with multiple curves. Put data for 2nd curve into ```py.csv``` and run ```python main.py py.csv```. Copy the printed quadratic function into self contained Python script as ```y2``` adjusting to Python syntax. Add "y2" and data points to ```pd.DataFrame({"x": [...], "y": [...], "y2": [...]})```. Then:  
+```
+python sqrtm1.py
+```
+![sqrtm1.png](sqrtm1.png)
