@@ -27,4 +27,7 @@ Put data for 2nd curve into ```py.csv``` and run ```python main.py py.csv```. Co
 ```
 python sqrtm1_.py
 ```
-![sqrtm1_.png](sqrtm1_.png)
+![sqrtm1_.png](sqrtm1_.png)  
+
+Runtimes in ```sqrtm1_.py``` were determined with this C++ libgmpxx code:  
+[https://github.com/Hermann-SW/RSA_numbers_factored/blob/main/c%2B%2B/sqrtm1.cc](https://github.com/Hermann-SW/RSA_numbers_factored/blob/main/c%2B%2B/sqrtm1.cc)
