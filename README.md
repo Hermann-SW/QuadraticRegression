@@ -41,15 +41,15 @@ python sqrtm1__.py
 ```
 As can be seen, there is nearly no difference in quadratic regression curves, with and without new grey 1000000-digit prime data point:  
 ![sqrtm1__.png](sqrtm1__.png)  
+
+New datapoint was smallest 1000000-digit kown prime, rank 2137 of this list:  
+https://t5k.org/primes/lists/all.txt
 Changed, now rank 2143:  
 ```
 ...
 2143  10^999999+308267*10^292000+1     1000000 CH10  2021 
 ...
 ```
-
-New datapoint was smallest 1000000-digit kown prime, rank 2137 of this list:  
-https://t5k.org/primes/lists/all.txt
 
 Biggest known prime has 24,862,048 decimal digits, but it is =3 (mod 4).  
 
