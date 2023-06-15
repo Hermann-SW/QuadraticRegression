@@ -43,7 +43,7 @@ As can be seen, there is nearly no difference in quadratic regression curves, wi
 ![sqrtm1__.png](sqrtm1__.png)  
 
 New datapoint was smallest 1000000-digit kown prime, rank 2137 of this list:  
-https://t5k.org/primes/lists/all.txt
+https://t5k.org/primes/lists/all.txt  
 Changed, now rank 2143:  
 ```
 ...
